@@ -1,0 +1,4 @@
+group;protocol;subnet
+cell1;OPC-UA;192.168.0.0/24
+cell2;OPC-UA;10.10.10.0/24
+cell3;EIP;10.10.20.0/24
