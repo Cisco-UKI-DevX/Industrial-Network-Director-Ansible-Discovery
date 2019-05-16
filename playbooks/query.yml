@@ -7,20 +7,31 @@
   vars:
     ind_user: "admin"
     ind_password: "cisco123"
- 
-  tasks:		
-    - name: uri_playbook
+    indurl: "https://198.18.135.62:8443"
+    csvfile: "devices.csv"
+  tasks:
+
+    - name: csv-read
+      read_csv:
+        path: "{{ csvfile }}"
+        delimiter: ';'
+      register: devices
+          
+    - name: add-discovery
       uri:
-        method: GET
-        url: https://10.195.119.97:8443/api/v1/asset-summary?groupId=1
+        method: POST
+        url: "{{ indurl }}/api/v1/discovery-profiles"
         user: "{{ ind_user }}"
         password: "{{ ind_password }}"
         force_basic_auth: yes
         validate_certs: no
-        body_format: json
+        body: "{{ lookup('file', 'body.json') }}"
+        HEADER_Content-Type: "application/json"
+        HEADER_Accept: "application/json"
         timeout: 10
+        body_format: json
       register: http_output
 
     - debug:
             var: http_output
-      
+
