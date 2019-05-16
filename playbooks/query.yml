@@ -1,0 +1,26 @@
+---
+
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  vars:
+    ind_user: "admin"
+    ind_password: "cisco123"
+ 
+  tasks:		
+    - name: uri_playbook
+      uri:
+        method: GET
+        url: https://10.195.119.97:8443/api/v1/asset-summary?groupId=1
+        user: "{{ ind_user }}"
+        password: "{{ ind_password }}"
+        force_basic_auth: yes
+        validate_certs: no
+        body_format: json
+        timeout: 10
+      register: http_output
+
+    - debug:
+            var: http_output
+      
