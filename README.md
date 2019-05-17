@@ -10,7 +10,7 @@ This playbook utilises Cisco Industrial Network Director to automate discovery o
 
 Through the user providing a csv file of the estimated asset information, this playbook is able to automatically create the discovery profiles for the devices it is instructed to discover within the IND tool. 
 
-Note: csv file must be in the format of the below:
+Note: csv file must be in the format of the below - See example included within project:
 
 ```"name;accessProfileId;protocol;startip;endip;netmask"
 name;accessProfileId;protocol;startip;endip;netmask
@@ -20,7 +20,6 @@ test02;20100;OPC-UA;10.10.10.0;10.10.10.255;255.255.255.0
 
 //comment about the accessProfileId and how its being fixed
 
-See example included within project
 
 ## Future stuff
 
