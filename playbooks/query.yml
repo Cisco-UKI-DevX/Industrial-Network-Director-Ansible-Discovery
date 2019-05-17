@@ -30,9 +30,11 @@
         validate_certs: no
         body:
           accessProfileId: "{{ item.accessProfileId }}" # (integer) Access profile ID to associate the discovery profile
-          isLinkLayerDiscovery: true # (boolean) Type of discovery profile (Link layer discovery or IP scan discovery) ,
+          isLinkLayerDiscovery: false # (boolean) Type of discovery profile (Link layer discovery or IP scan discovery) ,
           name: "{{ item.name }}" # (string) Internationalized discovery profile name
-          startIp: "{{ item.subnet }}" # (string) Start IPv4 address of the discovery profile
+          startIp: "{{ item.startip }}" # (string) Start IPv4 address of the discovery profile
+          endIp: "{{ item.endip}}" # (string) End IPv4 address of the discovery profile
+          netmask: "{{ item.netmask}}"
         headers:
           Content-Type: "application/json"
           Accept: "application/json"
