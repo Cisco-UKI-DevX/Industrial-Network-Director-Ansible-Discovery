@@ -17,5 +17,5 @@ See example included within project
 Additional usecases in development:
 
 * Network performance baselining
-* Traffic 
+* Traffic analysis and reporting
 * Configuration Management
