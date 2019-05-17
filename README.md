@@ -20,7 +20,7 @@ test01;20100;OPC-UA;192.168.0.0;192.168.0.255;255.255.255.0
 test02;20100;OPC-UA;10.10.10.0;10.10.10.255;255.255.255.0
 ```
 
-//comment about the accessProfileId and how its being fixed
+_Currently working to remove the need for an accessProfileId field_
 
 
 ## Future stuff
