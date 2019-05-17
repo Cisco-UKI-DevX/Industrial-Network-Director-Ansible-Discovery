@@ -1,4 +1,4 @@
-group;protocol;subnet
-cell1;OPC-UA;192.168.0.0/24
-cell2;OPC-UA;10.10.10.0/24
-cell3;EIP;10.10.20.0/24
+name;accessProfileId;protocol;subnet
+test01;20100;OPC-UA;192.168.0.0
+test02;20100;OPC-UA;10.10.10.0
+test03;20100;EIP;10.10.20.0
