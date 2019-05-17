@@ -2,7 +2,7 @@
 
 Project focusing on introducing NetDevOps concepts for Industrial Control and Automation Networks.
 
-Within this repo there is collection of Ansible playbooks covering multiple network automation usecases for Industrial Networks. Please find their summaries and walkthroughs below.
+Within this repo there is collection of Ansible playbooks, python scripts and walkthroughs covering multiple network automation usecases for Industrial Networks utilising a selection of tools. Please find their summaries and walkthroughs below.
 
 ## Asset Discovery with Industrial Network Director
 
@@ -14,3 +14,8 @@ Note: csv file must be in the format of the below:
 
 See example included within project
 
+Additional usecases in development:
+
+* Network performance baselining
+* Traffic 
+* Configuration Management
