@@ -1,8 +1,10 @@
 # NDO-Industrial
 
-Project focusing on introducing NetDevOps concepts for Industrial Control and Automation Networks.
+Project focusing on introducing NetDevOps concepts for Industrial Control and Automation Networks. 
 
-Within this repo there is collection of Ansible playbooks, python scripts and walkthroughs covering multiple network automation usecases for Industrial Networks utilising a selection of tools. Please find their summaries and walkthroughs below.
+Within this repo there is collection of Ansible playbooks, python scripts and walkthroughs covering multiple network automation usecases for Industrial Networks utilising a selection of typical tools. Please find their summaries and walkthroughs below.
+
+#### Please note this is currently a work in progress
 
 ## Asset Discovery with Industrial Network Director (Under development)
 
