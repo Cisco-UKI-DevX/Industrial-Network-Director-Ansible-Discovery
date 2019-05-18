@@ -22,6 +22,8 @@ test02;20100;OPC-UA;10.10.10.0;10.10.10.255;255.255.255.0
 
 _Currently working to remove the need for an accessProfileId field_
 
+## SMS Alerting with Industrial Network Director (Under development)
+
 
 ## Future stuff
 
