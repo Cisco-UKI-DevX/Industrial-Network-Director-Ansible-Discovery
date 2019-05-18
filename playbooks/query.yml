@@ -4,11 +4,24 @@
   connection: local
   gather_facts: no
 
+  vars_prompt:
+
+    - name: ind_user
+      prompt: "Please enter your username"
+      private: no
+
+    - name: ind_password
+      prompt: "Please enter your password"
+
+    - name: indip
+      prompt: "Please enter the IP address and port for Industrial Network Director (NOTE: default port for IND is typically 8443"
+      private: no
+
+    - name: csvfile
+      prompt: "Please enter a path to the csv file: "
+      private: no
+
   vars:
-    ind_user: "admin"
-    ind_password: "cisco123"
-    indurl: "https://198.18.135.62:8443"
-    csvfile: "devices.csv"
     listy:
       - { name: 'name1', group: 'wheel'}
       - { name: 'name2', group: 'wheel2'}
@@ -23,7 +36,7 @@
     - name: add-discovery
       uri:
         method: POST
-        url: "{{ indurl }}/api/v1/discovery-profiles"
+        url: "https://{{ indip }}/api/v1/discovery-profiles"
         user: "{{ ind_user }}"
         password: "{{ ind_password }}"
         force_basic_auth: yes

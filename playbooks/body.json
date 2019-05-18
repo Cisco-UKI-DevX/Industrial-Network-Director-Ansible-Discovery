@@ -1,0 +1,10 @@
+{
+ "accessProfileId": 30100,
+ "endIp": "192.168.0.255",
+ "groupId":1,
+ "hopeCountLimit": 0,
+ "isLinkLayerDiscovery": false,
+ "name": "Test-Discovery",
+ "netmask": "255.255.255.0",
+ "startIp": "192.168.0.0"
+}
