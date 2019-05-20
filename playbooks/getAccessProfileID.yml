@@ -1,0 +1,41 @@
+# This playbook lists all access profiles configured in Cisco Industrial Network Director (IND).
+---
+
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  vars_prompt:
+
+    - name: ind_user
+      prompt: "Please enter your username"
+      private: no
+
+    - name: ind_password
+      prompt: "Please enter your password"
+
+    - name: indip
+      prompt: "Please enter the IP address and port for Industrial Network Director (NOTE: default port for IND is typically 8443)"
+      private: no
+
+  tasks:
+
+    - name: Get list of access profile IDs
+      uri:
+        method: GET
+        url: "https://{{ indip }}/api/v1/access-profiles"
+        user: "{{ ind_user }}"
+        password: "{{ ind_password }}"
+        force_basic_auth: yes
+        validate_certs: no
+
+        headers:
+          Content-Type: "application/json"
+          Accept: "application/json"
+        timeout: 10
+        body_format: json
+
+      register: http_output
+
+    - debug:
+            var: http_output
