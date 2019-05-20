@@ -1,8 +1,8 @@
 # NDO-Industrial
 
-Project focusing on introducing NetDevOps concepts for Industrial Control and Automation Networks. 
+Project focusing on introducing NetDevOps concepts for Industrial Control and Automation Networks.
 
-Within this repo there is collection of Ansible playbooks, python scripts and walkthroughs covering multiple network automation usecases for Industrial Networks utilising a selection of typical tools. Please find their summaries and walkthroughs below.
+Within this repo there is collection of Ansible playbooks, python scripts and walkthroughs covering multiple network automation use cases for Industrial Networks utilising a selection of typical tools. Please find their summaries and walkthroughs below.
 
 #### Please note this is currently a work in progress and the following should not be run on any kind of production network
 
@@ -10,7 +10,7 @@ Within this repo there is collection of Ansible playbooks, python scripts and wa
 
 This playbook utilises Cisco Industrial Network Director to automate discovery of devices on a network.
 
-Through the user providing a csv file of the estimated asset information, this playbook is able to automatically create the discovery profiles for the devices it is instructed to discover within the IND tool. 
+Through the user providing a csv file of the estimated asset information, this playbook is able to automatically create the discovery profiles for the devices it is instructed to discover within the IND tool.
 
 Note: csv file must be in the format of the below - See example included within project:
 
@@ -27,7 +27,7 @@ _Currently working to remove the need for an accessProfileId field_
 
 ## Future stuff
 
-Additional usecases in development:
+Additional use cases in development:
 
 * Network performance baselining
 * Traffic analysis and reporting
