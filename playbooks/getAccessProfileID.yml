@@ -1,4 +1,5 @@
 # This playbook lists all access profiles configured in Cisco Industrial Network Director (IND).
+# Note: jmespath is required to run this playbook. Install via: 'pip install jmespath'
 ---
 
 - hosts: localhost
@@ -37,5 +38,8 @@
 
       register: http_output
 
+    - set_fact:
+        accessProfiles: "{{ http_output.json | json_query('records[*].{ID: id, Name: name, Description: description}') }}" # Filters output for ID, name and description
+
     - debug:
-            var: http_output
+            var: accessProfiles
