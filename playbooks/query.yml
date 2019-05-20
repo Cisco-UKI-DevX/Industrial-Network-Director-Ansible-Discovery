@@ -21,10 +21,6 @@
       prompt: "Please enter a path to the csv file: "
       private: no
 
-  vars:
-    listy:
-      - { name: 'name1', group: 'wheel'}
-      - { name: 'name2', group: 'wheel2'}
   tasks:
 
     - name: csv-read
@@ -41,8 +37,8 @@
         password: "{{ ind_password }}"
         force_basic_auth: yes
         validate_certs: no
-        
-        
+
+
         body:
           accessProfileId: "{{ item.accessProfileId }}" # (integer) Access profile ID to associate the discovery profile
           endIp: "{{ item.endip }}"
