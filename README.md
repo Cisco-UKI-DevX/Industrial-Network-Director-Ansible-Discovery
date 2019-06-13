@@ -1,4 +1,4 @@
-# NDO-Industrial
+# DevOps-Industrial
 
 Project focusing on introducing NetDevOps concepts for Industrial Control and Automation Networks.
 
