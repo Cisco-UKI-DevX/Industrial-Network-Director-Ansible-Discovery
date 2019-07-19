@@ -10,7 +10,7 @@ The challenge however exists in the fact that these networks can be very large a
 
 With the user providing a csv file of the estimated asset information (IP addressing and discovery profile requried) this playbook is able to automatically create the discovery profiles for the devices it is instructed to discover within the IND tool.
 
-Prerequsites for this project - Python 2.7 or later, Ansible
+> Prerequsites for this project - Python 2.7 or later, Ansible
 
 ## Steps:
 
