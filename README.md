@@ -4,7 +4,7 @@ This project utilises Cisco Industrial Network Director (IND) - a network manage
 
 Industrial Network Director utilses the concept of discovery profiles which are able to actively scan the OT network using automation protocols such as Modbus, BACnet Ethernet/IP, Profinet and OPC-UA. This allows for IT and OT to understand the assets in these environments.
 
-https://www.cisco.com/c/en/us/products/cloud-systems-management/industrial-network-director/index.html
+> https://www.cisco.com/c/en/us/products/cloud-systems-management/industrial-network-director/index.html
 
 The challenge however exists in the fact that these networks can be very large and manual creation of discovery profiles is sometimes unfeasible. Therefore with this playbook we have automated part of that process.
 
@@ -37,7 +37,6 @@ To make discovery of the Profile IDs easier, we have also build a playbook which
 * netmask - The network mask for the network being scanned
     
 2. Now we're ready to run the playbook, this can be done with a simple command of `ansible-playbook IND-Automated-Discovery.yml`
-
 
 3. Expected output
 
