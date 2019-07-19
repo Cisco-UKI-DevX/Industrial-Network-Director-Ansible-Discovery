@@ -24,13 +24,13 @@ test02;20100;OPC-UA;10.10.10.0;10.10.10.255;255.255.255.0
 ```
 
 * Name - Name for the profile for within IND
-accessProfileID - Industrial Network Director uses the concept of access profiles to instruct the system which protocols to scan on. These currently have to be manually created within IND. For a guide on creating the profiles please see the internal documentation on your IND system.
+accessProfileID - Industrial Network Director uses the concept of access profiles to instruct the system which protocols to scan on. These currently have to be manually created within IND. For a guide on creating the profiles please see the internal documentation on your IND system. 
 
-*Currently working to remove the need for an accessProfileId field to automatically create access profiles based on protocol*
+    *Currently working to remove the need for an accessProfileId field to automatically create access profiles based on protocol*
 
-It is best practice to make these profiles as specific as possible as we are carrying out an active scan. Therefore pruning un-needed protocols is recommended.
+    It is best practice to make these profiles as specific as possible as we are carrying out an active scan. Therefore pruning un-needed protocols is recommended.
 
-To make discovery of the Profile IDs easier, we have also build a playbook which when run will return a list of all access profile ID's on the system.
+    To make discovery of the Profile IDs easier, we have also build a playbook which when run will return a list of all access profile ID's on the system.
 
 * Protocol - Currently not utilised
 * startip - The starting IP address for the scan
