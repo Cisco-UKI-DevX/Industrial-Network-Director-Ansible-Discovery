@@ -14,7 +14,7 @@ Prerequsites for this project - Python 2.7 or later, Ansible
 
 ## Steps:
 
-1. The first step to using this project is to build our csv file which will input into the playbook when it is run. We have included a sample csv in the project files, each line CSV will correspond to a discovery profile. An example format of a csv file can be seen below and also in the 'devices.csv' file within the repo. A brief overview of the files contents can be seen below.
+Step 1: The first step to using this project is to build our csv file which will input into the playbook when it is run. We have included a sample csv in the project files, each line CSV will correspond to a discovery profile. An example format of a csv file can be seen below and also in the 'devices.csv' file within the repo. A brief overview of the files contents can be seen below.
     
 ```"name;accessProfileId;protocol;startip;endip;netmask"
 name;accessProfileId;protocol;startip;endip;netmask
@@ -36,11 +36,10 @@ To make discovery of the Profile IDs easier, we have also build a playbook which
 * endip - The end IP address for the scan
 * netmask - The network mask for the network being scanned
     
-2. Now we're ready to run the playbook, this can be done with a simple command of `ansible-playbook IND-Automated-Discovery.yml`
+Step 2: Now we're ready to run the playbook, this can be done with a simple command of `ansible-playbook IND-Automated-Discovery.yml`
 
-3. Expected output
+Step 3: Expected output
 
-4. Things we need to do to fully automate later on
 
 
 
