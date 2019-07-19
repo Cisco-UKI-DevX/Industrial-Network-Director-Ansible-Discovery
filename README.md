@@ -10,7 +10,7 @@ The challenge however exists in the fact that these networks can be very large a
 
 With the user providing a csv file of the estimated asset information (IP addressing and discovery profile requried) this playbook is able to automatically create the discovery profiles for the devices it is instructed to discover within the IND tool.
 
-> Prerequsites for this project - Python 2.7 or later, Ansible
+> Prerequsites for this project - Python 2.7 or later, Ansible - This project assumes some knowledge of Ansible
 
 ## Steps:
 
@@ -30,7 +30,7 @@ accessProfileID - Industrial Network Director uses the concept of access profile
 
     It is best practice to make these profiles as specific as possible as we are carrying out an active scan. Therefore pruning un-needed protocols is recommended.
 
-    To make discovery of the Profile IDs easier, we have also build a playbook which when run will return a list of all access profile ID's on the system.
+    To make discovery of the Profile IDs easier, we have also built a playbook which when run will return a list of all access profile ID's on the system. You should use this in a scenario where you are unsure on the accessProfileId values by running hte command `ansible-playbook getAccessProfileID.yml` 
 
 * Protocol - Currently not utilised
 * startip - The starting IP address for the scan
