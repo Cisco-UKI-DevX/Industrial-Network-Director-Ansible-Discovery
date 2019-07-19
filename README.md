@@ -41,7 +41,7 @@ accessProfileID - Industrial Network Director uses the concept of access profile
 Now we're ready to run the playbook, this can be done with a simple command of `ansible-playbook discoveryAutoBuild.yml` Follow the onscreen prompts for the system information as seen below and provide a path to your csv file. The playbook will then run, creating a profile for each line within the CSV.
 
 
-![alt text](run.gif "Run playbook")
+![alt text](Images/run.gif "Run playbook")
 
 #### Step 3: 
 Expected output
