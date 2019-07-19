@@ -44,8 +44,10 @@ Now we're ready to run the playbook, this can be done with a simple command of `
 
 
 #### Step 3: 
-Expected output
+To verify the profiles have been created properlly, on the IND GUI navigate to Operate > Discovery and verify that the profile names you defined have been sucessfully created. From here you can then run the discoveries by pressing "Scan Now"
 
+![myimage-alt-tag](Images/verify.gif)
 
+We intend to update this project to run the discovery profiles as soon as they are created by the playbook, this will be added in a later version.
 
 
