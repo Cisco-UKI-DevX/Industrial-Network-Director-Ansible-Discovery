@@ -12,7 +12,7 @@ With the user providing a csv file of the estimated asset information (IP addres
 
 Prerequsites for this project - Python 2.7 or later, Ansible
 
-Steps:
+## Steps:
 
 1. The first step to using this project is to build our csv file which will input into the playbook when it is run. We have included a sample csv in the project files, each line CSV will correspond to a discovery profile. An example format of a csv file can be seen below and also in the 'devices.csv' file within the repo. A brief overview of the files contents can be seen below.
     
