@@ -12,6 +12,8 @@ With the user providing a csv file of the estimated asset information (IP addres
 
 > Prerequsites for this project - Python 2.7 or later, Ansible - This project assumes some knowledge of Ansible
 
+> To run these scripts you will need an instance of Industrial Network Director running. dcloud.cisco.com has an "Cisco Industrial Network Director v3" demo which can be used for this integration or alternatively you can download IND from the cisco.com website, a fresh install has a 90 day trial license. https://software.cisco.com/download/home/286310815/type/286310951/release/1.6.1
+
 ## Steps:
 
 #### Step 1:
@@ -36,9 +38,11 @@ accessProfileID - Industrial Network Director uses the concept of access profile
 * startip - The starting IP address for the scan
 * endip - The end IP address for the scan
 * netmask - The network mask for the network being scanned
+
+After your .csv file is in place, we can now move onto step 2 and look to run the playbook.
     
 #### Step 2:
-Now we're ready to run the playbook, this can be done with a simple command of `ansible-playbook discoveryAutoBuild.yml` Follow the onscreen prompts for the system information as seen below and provide a path to your csv file. The playbook will then run, creating a profile for each line within the CSV.
+To start the playbook on ansible, this can be done with a simple command of `ansible-playbook discoveryAutoBuild.yml` Follow the onscreen prompts for the system information as seen below and provide a path to your csv file. The playbook will then run, creating a profile for each line within the CSV.
 
 ![myimage-alt-tag](Images/run.gif)
 
