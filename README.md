@@ -25,6 +25,8 @@ test01;20100;OPC-UA;192.168.0.0;192.168.0.255;255.255.255.0
 test02;20100;OPC-UA;10.10.10.0;10.10.10.255;255.255.255.0
 ```
 
+The columns for the csv are as follows:
+
 * Name - Name for the profile for within IND
 accessProfileID - Industrial Network Director uses the concept of access profiles to instruct the system which protocols to scan on. These currently have to be manually created within IND. For a guide on creating the profiles please see the internal documentation on your IND system. 
 
